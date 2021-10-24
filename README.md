@@ -462,8 +462,7 @@ IPython.display.Audio('./data/30s_trained_model.mp3')
 
 
 <audio controls="controls" >
-    <source src="data:audio/mpeg;base64,AAAAFGZ0eXBxdCAgAAAAAHF0ICAAAAAId2lkZQAHVZVtZGF0//uQZAAAAlgVRJ1h4AAs7RRSoAgBF8CVHDnegADCQiDDACAAABfz9XY1ylYGXDMIzKMFDWvKXba2sOkOiumGxNy0Yb4JsAjBvo4bgagsEbV73vfDxXq9nfv44fEYP8H/lAx//B9Hv/z//6P///+fAAA/////////////////zvQn/vkap/////O6EJOc7VOeQkjKd6EIeQhJzoBuEAAZ6uOcOveYjf2a/sCaBHCaCIaNPMYWAkcSlMYnyOdGKkcZsKYyC0YmBUZUH+cMpOdoQOZzHEYbCSYbIgaM0Wb6rQZ42aZbmgZyCgYfDwZFDYZJjyY2qiZCjGLaiZck8aDrAYVAAYJh2YphyUAkYJDOYqgKYUB4Ag6MQxmBwcmJ4WGNILGDYCtecRFCEmCATGBINjdBogAAAaIAAAGiAAABogAAAaIAAAGiAAABoQAAAaIAAAGiAAABogAAAaIAAAGiAAABogAAAaIAAAGiAAABogAAAaIAAAGiAAABogAAAaIAAAGiAAABogAAAaIAAAGiAAABogAAAaIAAAGiAAABogAAAaIAAACMc3RjbwAAAAAAAAAfAAAAJAAAPi4AAHw4AAC6QwAA+E0AATZYAAF0YgABsm0AAfB3AAIuggACbIwAAqqWAALooQADJqsAA2S2AAOiwAAD4MsABB7VAARc4AAEmuoABNj1AAUW/wAFVQkABZMUAAXRHgAGDykABk0zAAaLPgAGyUgABwdTAAdFXQ==" type="audio/mpeg" />
-    Your browser does not support the audio element.
+    <source src="data:audio/Your browser does not support the audio element.
 </audio>
 
 
@@ -475,6 +474,7 @@ You have come to the end of the notebook.
 
 <font color="blue">
 Here's what you should remember:
+               
 - A sequence model can be used to generate musical values, which are then post-processed into midi music.
 - Fairly similar models can be used to generate dinosaur names or to generate music, with the major difference being the input fed to the model.  
 - In Keras, sequence generation involves defining layers with shared weights, which are then repeated for the different time steps $1, \ldots, T_x$.
