@@ -83,7 +83,7 @@ print('Shape of Y:', Y.shape)
 
 We have just loaded the following:
 
-- `X`: This is an (m, $T_x$, 78) dimensional array. We have m training examples, each of which is a snippet of $T_x =30$ musical values. At each time step, the input is one of 78 different possible values, represented as a one-hot vector. Thus for example, X[i,t,:] is a one-hot vector representating the value of the i-th example at time t.
+- `X`: This is an (m, Tx, 78) dimensional array. We have m training examples, each of which is a snippet of Tx =30 musical values. At each time step, the input is one of 78 different possible values, represented as a one-hot vector. Thus for example, X[i,t,:] is a one-hot vector representating the value of the i-th example at time t.
 
 - `Y`: This is essentially the same as `X`, but shifted one step to the left (to the past). in this peoject, we're interested in the network using the previous values to predict the next value, so our sequence model will try to predict $y^{\langle t \rangle}$ given $x^{\langle 1\rangle}, \ldots, x^{\langle t \rangle}$. However, the data in `Y` is reordered to be dimension $(T_y, m, 78)$, where $T_y = T_x$. This format makes it more convenient to feed to the LSTM later.
 
